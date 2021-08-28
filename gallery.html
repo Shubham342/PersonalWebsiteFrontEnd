@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0" charset="UTF-8">
+        <title>Shubham Software Developer</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="images/logo.jpg" alt="Logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Bio</button>
+                          <div class="dropdown-content">
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="skill.html">Skills</a>
+                            <a href="education.html">Education</a>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <button class="dropbtn">More</button>
+                          <div class="dropdown-content">
+                            <a href="service.html">Services</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="experience.html">Proffesional Experience</a>
+                          </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <h1><strong>Shubham, An Experienced Software developer</strong></h1>
+        </header>
+        <section class="gallery">
+            <h2>Image Gallery</h2>
+            <div class="row1">
+              <div class="column">
+                <img src="images/accenture.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/amazon.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/google.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/IBM.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              </div>
+                <div class="column">
+                <img src="images/Microsoft.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/image1.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/image2.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+              </div>
+              <div class="column">
+                <img src="images/image3.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+              </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 8</div>
+                  <img src="images/accenture.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 8</div>
+                  <img src="images/amazon.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 8</div>
+                  <img src="images/google.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 8</div>
+                  <img src="images/IBM.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">5 / 8</div>
+                  <img src="images/Microsoft.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 8</div>
+                  <img src="images/image1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 8</div>
+                  <img src="images/image2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 8</div>
+                  <img src="images/image3.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                  <img class="demo" src="images/accenture.jpg" onclick="currentSlide(1)" alt="Accenture">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/amazon.jpg" onclick="currentSlide(2)" alt="amazon">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/google.jpg" onclick="currentSlide(3)" alt="google">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/IBM.png" onclick="currentSlide(4)" alt="IBM">
+                </div>
+                <div class="column">
+                  <img class="demo" src="images/Microsoft.jpg" onclick="currentSlide(5)" alt="Microsoft">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/image1.png" onclick="currentSlide(6)" alt="Software development">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/image2.png" onclick="currentSlide(7)" alt="Software development">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="images/image3.jpg" onclick="currentSlide(8)" alt="Software development">
+                </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=100006023748227" target="_blank"><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+                        <li ><a href="#"><ion-icon name="logo-whatsapp" class="whatsapp"></ion-icon></a></li>
+                        <li class="instagram"><a href="https://instagram.com/shubham_singla10?igshid=1v5wr8yjasph7" target="_blank"><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon></a></li>
+                    </ul>
+                 </div>
+            </div>
+            <div class="row">
+                <p>
+                    This is my personal website
+                </p>
+            </div>
+        </footer>
+
+    </body>
+</html>
